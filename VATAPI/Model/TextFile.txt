@@ -1,0 +1,7 @@
+﻿dotnet ef dbcontext scaffold "Host=192.168.1.104;Database=VAT_MGT_DB;Username=postgres;Password=1234" Npgsql.EntityFrameworkCore.PostgreSQL -o PgModels
+
+dotnet ef dbcontext scaffold "Host=localhost;Database=mydatabase;Username=myuser;Password=mypassword" Npgsql.EntityFrameworkCore.PostgreSQL -o Models
+
+Scaffold-DbContext "Host=192.168.1.104;Database=VAT_MGT_DB;Username=postgres;Password=1234" Npgsql.EntityFrameworkCore.PostgreSQL -o PgModels
+
+Scaffold-DbContext "Server=ASITDEV11\SQL2K12ENT;Database=VAT_MGT_DB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir MSModels -Context SQLDbContext -Force
